@@ -1,0 +1,216 @@
+.modal-confirm-workerWarn{
+	.ivu-modal-close .ivu-icon-ios-close{
+		font-size:50px;
+		top:3px;
+	}
+}
+.workerWarn-btn{
+	color:#21ae9c;
+	&:hover{
+		cursor:pointer;
+		text-decoration:underline;
+	}
+	i{
+		display:inline-block;
+		vertical-align:middle;
+		width:36/@baseFontRem;
+		height:36/@baseFontRem;
+		background:url(../../assets/images/icons/workerWarnIcon.png) no-repeat center center;
+		background-size:contain;
+		margin:-4/@baseFontRem 10/@baseFontRem 0 0;
+	}
+}
+.modal-btn-box{
+	margin-bottom:60/@baseFontRem;
+}
+.workerWarn-tip-box{
+	.ivu-tooltip-inner{
+		max-width:100%;
+	}
+}
+.workerWarnList{
+	width:100%;
+	.lst-body{
+		display:table;
+		width:100%;
+	}
+	.lst-item{
+		display:table-row;
+		width:100%;
+
+		&.lst-item-thead{
+			background:#f6f6f6;
+			color:#6d6d6d;
+
+			span{
+				padding:16/@baseFontRem 20/@baseFontRem;
+				border-top:2/@baseFontRem solid #ebebeb;
+				border-bottom:2/@baseFontRem solid #ebebeb;
+				
+				&.first-child{
+					border-radius:6/@baseFontRem 0 0 6/@baseFontRem;
+					border-left:2/@baseFontRem solid #ebebeb;
+					text-align:left;
+				}
+				&.last-child{
+					border-radius:0 6/@baseFontRem 6/@baseFontRem 0;
+					border-right:2/@baseFontRem solid #ebebeb;
+					text-align:right;
+				}
+			}
+		}
+		span{
+			display:table-cell;
+			width:30%;
+			padding:24/@baseFontRem 10/@baseFontRem;
+			border-bottom:2/@baseFontRem solid #f4f4f4;
+			text-align:center;
+			&.align-left{
+				text-align:left;
+			}
+			&.align-right{
+				text-align:right;
+			}
+		}
+
+	}
+}
+.workerWarn-icon-qst{
+  display: inline-block;
+  background: #f9f9f9;
+  border: 2/@baseFontRem solid #dcdcdc;
+  color: #a9a9a9;
+  font-size: 36/@baseFontRem;
+  border-radius: 50%;
+  width: 44/@baseFontRem;
+  height: 44/@baseFontRem;
+  line-height: 40/@baseFontRem;
+  text-align: center;
+  position: relative;
+  top:-4/@baseFontRem;
+}
+.workerWarn-infoBox{
+	font-size: 32/@baseFontRem;
+	color:#1c1c1c;
+	margin-top:20/@baseFontRem;
+	.addWorkerWarnList-btn{
+		font-size: 32/@baseFontRem;
+		color:#21ae9c;
+    display: inline-block;
+    vertical-align: middle;
+    &:hover{
+    	cursor:pointer;
+    	text-decoration:underline;
+    }
+	}
+	.ivu-form-item{
+		&.ivu-form-item1{
+			margin-bottom:20/@baseFontRem;
+			margin-top:40/@baseFontRem;
+		}
+		&.ivu-form-item2{
+			margin-bottom:40/@baseFontRem;
+		}
+	}
+	.ivu-form-item-label{
+		font-size: 32/@baseFontRem;
+		color:#1c1c1c;
+		display: inline-block;
+    vertical-align: middle;
+    margin-right:20/@baseFontRem;
+	}
+}
+.select-workerWarn-form-item{
+	width:20%;
+  float:left;
+  margin-left:0;
+}
+.ivu-select-workerWarn{
+  &.ivu-select-single {
+  	.ivu-select-selection {
+	  	height: 92/@baseFontRem;
+	  	line-height: 92/@baseFontRem;
+	  	border-color: #c3c3c3;
+	  	.ivu-select-selected-value{
+	  		height: 92/@baseFontRem;
+	  		line-height: 92/@baseFontRem;
+	  		font-size:32/@baseFontRem;
+	  		color:#1c1c1c;
+	  	}
+	  }
+  }
+  .ivu-select-arrow{
+  	font-size:32/@baseFontRem;
+  	color:#787878;
+  }
+}
+.contact-workerWarn-form-item{
+	width:78%;
+	float:right;
+}
+.workerWarn-input-tel{
+	margin-top:-2/@baseFontRem;
+}
+.addGroup-input{
+	.ivu-input-group-prepend{
+		font-size:32/@baseFontRem;
+  	color:#787878;
+  	border-right:none;
+  	border-color:#c3c3c3;
+  	background:none;
+	}
+}
+.workerWarnList-delBtn{
+	display: inline-block;
+	vertical-align:middle;
+	width:38/@baseFontRem;
+	height:36/@baseFontRem;
+	background:url(../../assets/images/icons/delBtn-icon.png) no-repeat center center;
+	background-size:cover;
+	&:hover{
+		cursor:pointer;
+		background:url(../../assets/images/icons/delBtn-icon-on.png) no-repeat center center;
+		background-size:cover;
+	}
+}
+.warnList-tip{
+	margin-bottom:32/@baseFontRem;
+	color:#ff0000;
+}
+.workerWarn-input-name,
+.workerWarn-input-tel{
+	border:2/@baseFontRem solid #c3c3c3;
+	border-radius:4px;
+	&.divFocus{
+		border:2/@baseFontRem solid #4dbfbb;
+	}
+	&.addGroup-input{
+		.ivu-input{
+			border:none;
+		}
+		.ivu-input-group-prepend{
+			border:none;
+		}
+	}
+	
+	&.ivu-input-group-with-prepend{
+		.ivu-input{
+			border-left:none;
+		}
+	}
+}
+.ivu-form-item-error{
+	.workerWarn-input-name,
+	.workerWarn-input-tel{
+		&.divFocus{
+			border:2/@baseFontRem solid #ed4014;
+		}
+	}
+	.workerWarn-input-email{
+		.ivu-input {
+			&:focus{
+				border: 1px solid #ed4014;
+			}
+		}
+	}
+}

@@ -1,0 +1,358 @@
+.modal-search-addr{
+  .ivu-modal{
+    top:400/@baseFontRem;
+    .ivu-modal-body{
+      padding-top: 0;
+      overflow: unset;
+    }
+    .ivu-modal-content {
+      padding: 34/@baseFontRem 20/@baseFontRem;
+    }
+    .ivu-modal-header-inner{
+      overflow: unset;
+      font-size: 44/@baseFontRem;
+      color: #000;
+      font-weight: normal;
+    }
+  }
+}
+
+.search-box {
+  position: relative;
+  padding-bottom:80/@baseFontRem;
+  .search-box-tip{
+    font-size: 32/@baseFontRem;
+    color:#969696;
+    margin:0 0 80/@baseFontRem 0;
+  }
+  .his-wall-addr {
+    z-index: 99;
+    position: absolute;
+    background: #fff;
+    margin-top: 20/@baseFontRem;
+    width: 100%;
+    padding:0;
+    font-size: 32/@baseFontRem;
+    color: #1c1c1c;
+    line-height: 36px;
+    border:2/@baseFontRem solid #d9d9d9;
+    border-radius: 0 0 12/@baseFontRem 12/@baseFontRem;
+    box-shadow: 2/@baseFontRem 8/@baseFontRem 20/@baseFontRem rgba(0, 0, 0, 0.16);
+    .addr-item {
+      cursor: pointer;
+      word-break: break-all;
+      line-height: 26px;
+      padding: 34/@baseFontRem 40/@baseFontRem;
+      position: relative;
+      border-top:2/@baseFontRem solid #f4f4f4;
+      &:first-child{
+        border-top:none;
+      }
+      .ivu-icon {
+        cursor: pointer;
+        top: 40/@baseFontRem;
+        position: absolute;
+        right: 40/@baseFontRem;
+      }
+      img {
+        float: left;
+        margin-right: 30/@baseFontRem;
+        width: 66/@baseFontRem;
+      }
+    }
+    .addr-item:hover {
+      background:#f6fcfa;
+      color:#21ae9c;
+    }
+    .ivu-dropdown-item{
+      font-size: 32/@baseFontRem;
+      color: #000;
+    }
+  }
+  .ivu-input-wrapper {
+    border-radius: 110/@baseFontRem;
+    width: 100%;
+    border:2/@baseFontRem solid #d9d9d9;
+    &:hover,
+    &.isFocus{
+      border:2/@baseFontRem solid #4dbfbb;
+    }
+
+    .ivu-input {
+      padding: 12/@baseFontRem 40/@baseFontRem;
+      height: 92/@baseFontRem;
+      right: 0;
+      font-size: 32/@baseFontRem;
+      border-radius: 0 110/@baseFontRem 110/@baseFontRem 0;
+      color:#1c1c1c;
+      border:none;
+
+      &:hover{
+        border-color:#4dbfbb;
+      }
+      &:focus{
+        outline:none;
+        box-shadow:unset;
+        border-color:#4dbfbb;
+      }
+    }
+    .ivu-input-group-prepend {
+      background: #fff;
+      border-radius: 55px;
+      padding-left: 18px;
+      border:none;
+      border-right:2/@baseFontRem solid #e0e0e0;
+      .ivu-select-dropdown {
+        max-height: 480px;
+        overflow: auto;
+        text-align: left;
+        width: 100%;
+        left: 0 !important;
+        padding:0;
+        top: 51px !important;
+
+        .ivu-dropdown-item {
+          width: 25%;
+          padding:56/@baseFontRem 0;
+          border-right:2/@baseFontRem solid #f4f4f4;
+          border-bottom:2/@baseFontRem solid #f4f4f4;
+          text-align:center;
+          display: inline-block;
+          float: left;
+          overflow: hidden;
+          clear: unset;
+          .coin-text {
+            margin-left:6/@baseFontRem;
+          }
+          img,.coin-text {
+            display:inline-block;
+            vertical-align:middle;
+          }
+          &:hover{
+            background:#f6fcfa;
+            color:#21ae9c;
+            font-weight:bold;
+          }
+        }
+      }
+      .ivu-btn {
+        font-size: 16px;
+        .ivu-icon {
+          margin-left: 10px;
+        }
+        &.search-coins-slt-btn{
+          background:transparent;
+          border:none;
+          color: #1c1c1c;
+          transition:all .5s;
+          &:hover{
+            background:transparent;
+            border:none;
+            color:#21ae9c;
+          }
+        }
+      }
+    }
+    .ivu-input-group-append {
+      border: 0;
+      position: absolute;
+      right: 0;
+      width: auto;
+      z-index: 10;
+      color: #fff;
+      background-color: transparent;
+      .ivu-icon {
+        position: absolute;
+        top: 26/@baseFontRem;
+        left: -50/@baseFontRem;
+        cursor: pointer;
+      }
+      .ivu-btn {
+        border-radius: 94/@baseFontRem;
+        height: 80/@baseFontRem;
+        padding: 0 54/@baseFontRem;
+        background: -webkit-gradient(linear, left top, right top, from(#01d0be), to(#00d054));
+        background: linear-gradient(to right, #01d0be, #00d054);
+        border: 2/@baseFontRem solid #46c9b3 !important;
+        font-size: 32/@baseFontRem;
+        margin: -6/@baseFontRem -8/@baseFontRem 0 0;
+        &:hover{
+          color:#fff;
+          background: -webkit-gradient(linear, left top, right top, from(rgba(1, 208, 190, 0.8)), to(rgba(0, 208, 84, 0.8)));
+          background: linear-gradient(to right, rgba(1, 208, 190, 0.8), rgba(0, 208, 84, 0.8));
+        }
+        &.search-box-searchBtn{
+          color:#fff;
+        }
+      }
+    }
+  }
+  .search-coinsImg{
+    width:66/@baseFontRem;
+    height:66/@baseFontRem;
+  }
+  .search-coinsMenu{
+    .ivu-dropdown-item{
+      font-size:32/@baseFontRem !important;
+      color:#1c1c1c;
+      line-height:66/@baseFontRem;
+    }
+  }
+  .ivu-icon{
+    &.icon-close{
+      width:44/@baseFontRem;
+      height:44/@baseFontRem;
+      background:url(../../assets/images/icons/searc-close-btn.png) no-repeat center center;
+      background-size:contain;
+      &:hover{
+        background:url(../../assets/images/icons/searc-close-btn-on.png) no-repeat center center;
+        background-size:contain;
+      }
+      &:before{
+        display:none;
+      }
+    }
+  }
+}
+#app{
+  .home-search-box{
+    .ivu-btn {
+      font-size: 32/@baseFontRem;
+      .ivu-icon {
+        margin-left: 20/@baseFontRem;
+        font-size:40/@baseFontRem;
+        opacity:0.3;
+      }
+      &.search-coins-slt-btn{
+        background:transparent;
+        border:none;
+        color: #1c1c1c;
+        &:hover{
+          background:transparent;
+          border:none;
+          color:#21ae9c;
+        }
+      }
+    }
+    .ivu-input-group-append .ivu-btn {
+      border-radius: 94/@baseFontRem;
+      height: 80/@baseFontRem;
+      padding: 0 60/@baseFontRem;
+      background: linear-gradient(to right, #01d0be, #00d054);
+      border: 2/@baseFontRem solid #46c9b3 !important;
+      font-size: 32/@baseFontRem;
+      margin: -6/@baseFontRem -8/@baseFontRem 0 0;
+      &:hover{
+        background: linear-gradient(to right, rgba(1, 208, 190, 0.8), rgba(0, 208, 84, 0.8));
+      }
+      &.search-box-searchBtn {
+        color: #fff;
+      }
+    }
+    .ivu-select-dropdown{
+      padding:0;
+    }
+  }
+}
+@media screen and (min-width: 0px) and (max-width:768px ){
+  .modal-search-addr{
+    .search-box .ivu-input-wrapper{
+      border-top:none;
+      &:hover,
+      &.isFocus{
+        border-left:none;
+        border-right:none;
+        border-top:none;
+        border-bottom:2/@baseFontRem solid #d9d9d9;
+      }
+    }
+    .ivu-modal{
+      top:90/@baseFontRem;
+      margin:0;
+      .ivu-modal-content{
+        border-radius:0;
+        box-shadow:unset;
+        padding:0;
+      }
+      .ivu-modal-close,
+      .ivu-modal-header{
+        display:none;
+      }
+      .ivu-modal-body{
+        overflow: unset;
+        padding:0;
+      }
+    }
+  }
+  .search-box{
+    padding-bottom:0;
+  }
+  .search-box .search-box-tip{
+    display:none;
+  }
+  .search-box .ivu-input-wrapper{
+    border-radius:0;
+    border-left:none;
+    border-right:none;
+    border-top:1px solid #edeaea;
+    border-bottom:1px solid #edeaea;
+    &:hover,
+    &.isFocus{
+      border-left:none;
+      border-right:none;
+      border-top:1px solid #edeaea;
+      border-bottom:1px solid #edeaea;
+    }
+
+    .ivu-input-group-prepend{
+      border-radius:0;
+      padding:0;
+
+      .ivu-btn{
+        padding:0 16/@baseFontRem;
+        margin:0;
+        .ivu-icon{
+          margin-left:22/@baseFontRem;
+        }
+      }
+    }
+
+    .ivu-input-group-append{
+      padding-right:16/@baseFontRem;
+
+      .ivu-btn{
+        &.search-box-searchBtn{
+          border-radius:0;
+          padding:0 32/@baseFontRem;
+        }
+      }
+    }
+  }
+  .search-box .ivu-input-wrapper .ivu-input-group-prepend .ivu-select-dropdown{
+    top:100/@baseFontRem !important;
+    border-left:none;
+    border-right:none;
+    .ivu-dropdown-item{
+      width:33.333333%;
+    }
+  }
+  .search-box .ivu-input-wrapper .ivu-input{
+    border-radius:0;
+    padding:0 24/@baseFontRem;
+    height:84/@baseFontRem;
+    font-size:28/@baseFontRem;
+  }
+  #app .home-search-box .ivu-input-group-append .ivu-btn{
+    &.search-box-searchBtn{
+      border-radius:10/@baseFontRem;
+      padding:0 20/@baseFontRem;
+      height:72/@baseFontRem;
+    }
+  }
+  #app .home-search-box .ivu-btn{
+    font-size:28/@baseFontRem;
+    &.search-coins-slt-btn{
+      padding:0 16/@baseFontRem 2/@baseFontRem;
+    }
+  }
+}

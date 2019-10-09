@@ -1,0 +1,218 @@
+.expand-row {
+  margin-bottom: 0;
+  .btn-copyIcon{
+    display:inline-block;
+    width:28/@baseFontRem;
+    height:28/@baseFontRem;
+    line-height:28/@baseFontRem;
+    background:url(../../assets/images/home/icon-copy.png) no-repeat center center;
+    background-size:contain;
+    margin-left:10/@baseFontRem;
+    text-indent:-99999px;
+    text-decoration:underline;
+    &:hover{
+      cursor:pointer;
+      opacity:0.8;
+    }
+  }
+}
+.epd-row-r{
+  border-left:2/@baseFontRem solid #4c4b4c;
+  padding:0 54/@baseFontRem;
+  font-size:32/@baseFontRem;
+  color:#e5e5e5;
+
+  .line-title{
+    font-weight:normal;
+    font-size:32/@baseFontRem;
+    color:#a8a8a8;
+  }
+
+  .clr-a8a8a8{
+    color:#a8a8a8;
+  }
+  .clr-59c3a1{
+    color:#59c3a1;
+  }
+
+  .line{
+    border-top:2/@baseFontRem solid #3a393a;
+    padding:24/@baseFontRem 0;
+
+    &:first-child{
+      border-top:none;
+    }
+  }
+
+  .fee-item{
+    display:inline-block;
+    vertical-align:middle;
+    padding:0 34/@baseFontRem;
+    border-left:2/@baseFontRem solid #4c4b4c;
+    line-height: 1.2;
+
+    &:first-child,
+    &.first{
+      padding-left:0;
+      border-left:none;
+    }
+  }
+
+  .income-item{
+    padding-right:20/@baseFontRem;
+  }
+}
+.epd-row-l-title{
+  padding:36/@baseFontRem 44/@baseFontRem 24/@baseFontRem;
+  border-bottom:2/@baseFontRem solid #4c4b4c;
+}
+.chart-tab{
+  button{
+    font-weight:normal;
+    font-size:40/@baseFontRem;
+    color:#fff;
+    padding:0 30/@baseFontRem;
+    border:none;
+    background:none;
+    border-right:2/@baseFontRem solid #797979;
+    line-height:1;
+
+    &:hover{
+      color:#24dea2;
+      text-decoration:underline;
+    }
+    &:focus{
+      outline:none;
+    }
+    &.active{
+      color:#24dea2;
+    }
+    &:first-child{
+      padding-left:0;
+    }
+    &:last-child{
+      border-right:none;
+    }
+  }
+}
+
+.epd-row-chart{
+  max-width:100%;
+  width:790*2/@baseFontRem;
+  height:(680-116)/@baseFontRem;
+  margin:40/@baseFontRem auto 0;
+  &.epd-row-chartH1{
+    height:680/@baseFontRem;
+  }
+  &.epd-row-chartH2{
+    height:(680-240)/@baseFontRem;
+  }
+}
+.epd-row-chartNodata{
+  font-size:32/@baseFontRem;
+  color:#e5e5e5;
+  text-align:center;
+}
+
+.epd-row-chart.epd-row-chartNodata{
+  padding:(680-200)/2/@baseFontRem 0 0 0;
+}
+.epd-row-chartH1.epd-row-chartNodata{
+  padding:(680-116)/2/@baseFontRem 0 0 0;
+}
+.fadeChart-enter-active, .fadeChart-leave-active {
+  transition: opacity .5s;
+}
+.fadeChart-enter, .fadeChart-leave-to {
+  opacity: 0;
+}
+@media screen and (min-width: 0px) and (max-width:768px ){
+  .home {
+    .icon-help-h5{
+      display:none;
+    }
+    .ivu-col-span-10,
+    .ivu-col-span-14{
+      width:100%;
+    }
+    .chart-tab{
+      button{
+        font-size:32/@baseFontRem;
+      }
+    }
+    .epd-row-l-title{
+      border-bottom:none;
+      padding-bottom:0;
+      padding-left:32/@baseFontRem;
+      padding-right:32/@baseFontRem;
+    }
+    .epd-row-chart{
+      max-width: 100%;
+    }
+    .epd-row-r{
+      font-size:28/@baseFontRem;
+      padding:0 32/@baseFontRem;
+      .line-title{
+        font-size:28/@baseFontRem;
+      }
+      .line{
+        padding:10/@baseFontRem 0;
+      }
+    }
+    .mergeMing-line{
+      display:block;
+      border-bottom:2/@baseFontRem solid #4c4b4c;
+      padding-bottom:24/@baseFontRem;
+      margin-bottom:24/@baseFontRem;
+      &:last-child{
+        border-bottom:none;
+      }
+    }
+    .mergeMing-info,
+    .alg-info{
+      float:right;
+    }
+    .incomeCpr-line{
+      display:block;
+      width:100%;
+      
+    }
+    .line-mingAddr{
+      padding:10/@baseFontRem 0;
+      h5{
+        padding-top:14/@baseFontRem;
+        padding-bottom:20/@baseFontRem;
+        border-bottom:2/@baseFontRem solid #4c4b4c;
+      }
+      div{
+        border-bottom:2/@baseFontRem solid #4c4b4c;
+        padding:20/@baseFontRem 0;
+        &:last-child{
+          border-bottom:none;
+          padding-bottom:0;
+        }
+      }
+    }
+    .expand-row{
+      .btn-copyIcon{
+        display:block;
+        width:auto;
+        height:28/@baseFontRem;
+        line-height:28/@baseFontRem;
+        background:none;
+        background-size:unset;
+        margin-left:0;
+        margin-top:10/@baseFontRem;
+        margin-bottom:14/@baseFontRem;
+        text-indent:unset;
+        text-decoration:underline;
+        color:#59c3a1;
+        font-size:28/@baseFontRem;
+        &:hover{
+          cursor:pointer;
+          opacity:1;
+        }
+      }
+    }
+  } 
+}

@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "name": "apfrontend",
+      "script": "./server-publish.js",
+      "env": {
+        "ENV_TYPE": "publish"
+      },
+      "instances": 1,
+      "exec_mode": "cluster",
+      "autorestart": true,
+      "error_file": "./logs/apfrontend-err.log",
+      "out_file": "./logs/apfrontend-out.log",
+      "log_date_format": "YYYY-MM-DD HH:mm Z"
+    }
+  ]
+}

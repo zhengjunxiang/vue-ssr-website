@@ -1,0 +1,24 @@
+version: "3"
+services:
+  frontline:
+    build: 
+      context: ./
+      dockerfile: ./provisioning/Dockerfile
+    image: registry.cn-hongkong.aliyuncs.com/XXXv3/apfrontend
+    environment:
+     - AP_ENV=prod
+     - AP_CLUSTER=prod
+     - AP_NODE=prod
+     - AP_APP=frontline
+     - AP_FRONT_API_URL=http://v3.XXX.com:8080
+     - AP_FRONT_SSO_URL=https://passport.bitmain.com
+     - AP_FRONT_SITE_URL=https://www.XXX.com
+     - AP_FRONT_CENTER_URL=https://account.bitmain.com
+    expose:
+     - 8080
+    ports:
+     - 18081:8080
+    volumes: 
+     - /opt/logs/frontline:/opt/frontline/logs
+    restart: always
+
