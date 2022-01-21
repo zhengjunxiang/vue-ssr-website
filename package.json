@@ -68,7 +68,7 @@
     "koa2-cors": "^2.0.6",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
-    "log4js": "^3.0.6",
+    "log4js": "^6.4.0",
     "mini-css-extract-plugin": "^0.4.4",
     "mockjs": "^1.0.1-beta3",
     "nodemon": "^1.18.6",
