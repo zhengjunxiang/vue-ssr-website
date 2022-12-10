@@ -22,7 +22,7 @@
     "compression": "^1.7.3",
     "echarts": "^4.2.0-rc.2",
     "es6-promise": "^4.2.5",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "iview": "^3.4.2",
     "js-cookie": "^2.2.0",
     "lru-cache": "^4.1.3",
